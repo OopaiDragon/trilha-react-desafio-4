@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  disabled?: boolean;
+}
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.button<ButtonProps>`
     width: 100%;
     height: 42px;
     background-color: #81259D;
